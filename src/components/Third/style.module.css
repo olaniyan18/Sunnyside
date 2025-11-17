@@ -1,0 +1,83 @@
+/** @format */
+
+.third {
+  display: grid;
+  gap: 50px;
+  text-align: center;
+  position: relative;
+  top: 320px;
+}
+
+.third > label {
+  font-size: 24px;
+  font-family: "Fraunces";
+  color: hsl(210, 4%, 67%);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* place-items: center; */
+  margin-bottom: 90px;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 16px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.name img {
+  width: 80px;
+  border-radius: 50px;
+}
+
+.name p {
+  color: hsl(212, 27%, 19%);
+  font-family: "Barlow";
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.name h3 {
+  color: hsl(212, 27%, 19%);
+  font-weight: 900;
+  font-family: "Fraunces";
+}
+
+.ceo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ceo1 {
+  color: hsl(210, 4%, 67%);
+  font-family: "Barlow";
+  font-weight: 600;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 860px) {
+  .third {
+    margin-top: 20px;
+  }
+  .testimonials {
+    gap: 87px;
+  }
+
+  .name {
+    gap: 25px;
+  }
+
+  .name p {
+    width: 65%;
+  }
+}

@@ -1,0 +1,51 @@
+/** @format */
+
+.footer {
+  background-color: hsl(168, 54%, 58%);
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  position: relative;
+  top: 340px;
+}
+
+.sunny {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+.sunny > ul {
+  list-style: none;
+  color: hsl(167, 40%, 24%);
+  font-family: "Barlow";
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.sunnyside {
+  font-family: "Barlow";
+  font-weight: 700;
+  font-size: 30px;
+  color: hsl(167, 40%, 24%);
+}
+
+.footer > ul {
+  list-style: none;
+  color: hsl(167, 40%, 24%);
+  font-family: "Barlow";
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer .ul li:hover {
+  color: white;
+  cursor: pointer;
+}

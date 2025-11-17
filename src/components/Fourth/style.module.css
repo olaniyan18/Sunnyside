@@ -1,0 +1,13 @@
+/** @format */
+
+.fourth {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  position: relative;
+  top: 340px;
+}
+
+.fourth img {
+  width: 100%;
+  display: block;
+}

@@ -1,0 +1,161 @@
+/** @format */
+
+.second {
+  position: relative;
+  top: 339px;
+}
+
+.first picture,
+.sec picture,
+.third picture {
+  width: -webkit-fill-available;
+}
+
+.first,
+.sec,
+.third {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.transform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  gap: 30px;
+  width: -webkit-fill-available;
+  padding: 0px 155px;
+}
+
+.line {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.line > label {
+  font-family: "Fraunces";
+  text-transform: uppercase;
+  color: hsl(212, 27%, 19%);
+  font-weight: 700;
+  /* width: 420px; */
+  cursor: pointer;
+  position: relative;
+  z-index: 1000;
+}
+
+.line hr {
+  position: absolute;
+  border: 3px solid hsl(51, 100%, 79%);
+  width: -webkit-fill-available;
+  margin-top: 10px;
+  border-radius: 16px;
+}
+
+.transform1,
+.stand1,
+.image3,
+.image4 {
+  display: none;
+}
+
+.transform h2 {
+  font-size: 40px;
+  font-family: "Fraunces";
+  font-weight: 900;
+  color: hsl(212, 27%, 19%);
+  width: 80%;
+}
+
+.transform p {
+  font-family: "Barlow";
+  width: 95%;
+  color: hsl(210, 4%, 67%);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.first img,
+.sec img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.third img {
+  width: 100%;
+}
+
+.third div {
+  height: -webkit-fill-available;
+}
+.text {
+  position: relative;
+  top: -150px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  font-family: "Fraunces";
+  color: hsl(167, 40%, 24%);
+  font-weight: 600;
+}
+
+.text p {
+  width: 80%;
+  font-family: "Barlow";
+  line-height: 1.5;
+}
+
+.photo {
+  color: hsl(198, 62%, 26%);
+}
+
+@media only screen and (max-width: 996px) {
+  .second {
+    top: 220px;
+  }
+
+  .first,
+  .sec {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .third {
+    grid-template-columns: 1fr;
+  }
+
+  .first picture,
+  .sec picture,
+  .third picture {
+    order: -1;
+  }
+
+  .transform {
+    padding: 0 25px 60px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .transform h2 {
+    width: 85%;
+  }
+  .third div {
+    margin-bottom: -120px;
+  }
+
+  .text {
+    top: -250px;
+  }
+}
+
+@media only screen and (max-width: 1276px) and (min-width: 996px) {
+  .transform {
+    padding: 0 50px 0 100px;
+  }
+}
